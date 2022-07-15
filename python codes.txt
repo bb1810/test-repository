@@ -1,0 +1,12 @@
+1.to see max rows:
+
+pd.set_option('display.max_rows', 100)
+
+2.compare two columns values in pandas df:
+
+survival_female = titanic_sorted[(titanic_sorted['Sex'] == 1) & (titanic_sorted['Survived'] ==1)]
+print(survival_female.count())
+
+3.count frequency of values in column
+
+df['column name'].value_counts()
